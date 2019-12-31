@@ -9,11 +9,13 @@ class Courses extends Controller
     //
     function fetch()
     {
-    	return Course::all();
- 		//$data Course::all();
- 		//return view('userview',['data']=>$data);
+    	///return Course::all();///working fine
+ 		//experiment 1
+ 		$data=Course::all();
+ 		//
+ 		return view('adminview',['data'=>$data]);
     
-
+		//experiment 1
 
 
     }
