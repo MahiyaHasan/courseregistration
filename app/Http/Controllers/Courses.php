@@ -19,4 +19,17 @@ class Courses extends Controller
 
 
     }
+
+    function save(Request $req)
+    {
+    	print_r($req->input());
+    	$course=new Course;
+    	$course->code=$req->code;
+    	$course->user_id=$req->user_id;
+    	$course->capacity=$req->capacity;
+    	$course->enrolled=$req->enrolled;
+
+    	echo $course->save();
+
+    }
 }

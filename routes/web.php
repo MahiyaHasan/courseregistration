@@ -15,3 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('show_course_admin','Courses@fetch');
+Route::view ('add_course_admin','add_course_admin');
+
+Route::post ('submit','Courses@save');
