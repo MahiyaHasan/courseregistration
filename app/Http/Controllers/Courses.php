@@ -34,4 +34,12 @@ class Courses extends Controller
     	echo $course->save();
 
     }
+
+    function update(Request $req)
+    {
+        course::where('code',$req->code)
+            ->update(['user_id'=>$req->user_id,'capacity'=>$req->capacity,
+                'enrolled'=>$req->enrolled]);
+        print_r($req->input(''));
+    }
 }

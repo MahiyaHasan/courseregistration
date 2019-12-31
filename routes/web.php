@@ -18,5 +18,7 @@ Route::get('course_teacher','Users@index');
 
 Route::get('show_course_admin','Courses@fetch');
 Route::view ('add_course_admin','add_course_admin');
-
 Route::post ('submit','Courses@save');
+Route::view ('update_course_admin','courses');
+Route::post ('submit','Courses@update');
+
