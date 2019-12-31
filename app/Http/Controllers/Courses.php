@@ -7,6 +7,8 @@ use App\Course;
 class Courses extends Controller
 {
     //
+
+   
     function fetch()
     {
     	///return Course::all();///working fine

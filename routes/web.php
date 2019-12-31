@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('course_teacher','Users@index');
+
 Route::get('show_course_admin','Courses@fetch');
 Route::view ('add_course_admin','add_course_admin');
 
